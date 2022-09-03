@@ -4,7 +4,7 @@
 
 <div>
   <img src="https://github-readme-stats.vercel.app/api?username=JonatasFreireDev&show_icons=true&theme=tokyonight" />
-  <img height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JonatasFreireDev&layout=compact&show_icons=true&theme=tokyonight">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JonatasFreireDev&layout=compact&show_icons=true&theme=tokyonight">
  </div>
 
 
