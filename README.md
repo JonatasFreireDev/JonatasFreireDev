@@ -2,6 +2,9 @@
 
 ## Hi there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="25px" height="25px" /> I'm Jonatas, welcome to my profile \o/
 
+<img width="700" src="https://i.pinimg.com/originals/7d/07/a2/7d07a255678962d30d8717dcf5dbd266.gif">
+
+
 <hr>
 
 ## 😎 A little more about me...
@@ -47,6 +50,10 @@ const jonatas = {
 ## 📢 Contact
 
 <a href="https://www.linkedin.com/in/jonatas-freire-557088139/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+<hr>
+
+<img width="700" src="https://c.tenor.com/bHcVmjFwXosAAAAC/beserk-guts.gif">
 
 <hr>
 
