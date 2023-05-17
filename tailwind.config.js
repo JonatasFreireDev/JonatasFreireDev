@@ -28,11 +28,11 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        appearFromRight: "appearFromRight 3s",
-        appearFromLeft: "appearFromLeft 3s",
-        appearFromTop: "appearFromTop 3s",
-        appearFromBottom: "appearFromBottom 3s",
-        appearFromNothing: "appearFromNothing 3s",
+        appearFromRight: "appearFromRight 3s forwards",
+        appearFromLeft: "appearFromLeft 3s forwards",
+        appearFromTop: "appearFromTop 3s forwards",
+        appearFromBottom: "appearFromBottom 3s forwards",
+        appearFromNothing: "appearFromNothing 3s forwards",
       },
       keyframes: {
         appearFromRight: {

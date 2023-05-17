@@ -5,9 +5,15 @@ export function useOberser(ref: RefObject<HTMLElement>) {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    observerRef.current = new IntersectionObserver(([entry]) => {
-      setIsOnScreen(entry.isIntersecting);
-    });
+    observerRef.current = new IntersectionObserver(
+      ([entry]) => {
+        setIsOnScreen(entry.isIntersecting);
+      },
+      {
+        rootMargin: "30px",
+        threshold: 0.5,
+      }
+    );
   }, []);
 
   useEffect(() => {
