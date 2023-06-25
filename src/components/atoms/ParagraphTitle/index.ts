@@ -1,0 +1,1 @@
+export { ParagraphTitle } from "./ParagraphTitle";

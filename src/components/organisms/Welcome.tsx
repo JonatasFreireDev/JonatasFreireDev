@@ -1,6 +1,4 @@
-import React from "react";
-import { CircularPhoto } from "../atoms/CircularPhoto";
-import { Title } from "../atoms/Title";
+import { CircularPhoto, ParagraphTitle } from "../atoms";
 
 export function Welcome() {
   return (
@@ -18,11 +16,9 @@ export function Welcome() {
         <div />
         <CircularPhoto />
         <div className="mb-16">
-          <Title>Bem Vindo</Title>
+          <ParagraphTitle content={"Bem Vindo"} />
         </div>
       </section>
     </header>
   );
 }
-
-// export const TesteHOC = EffectHoc(Teste);
