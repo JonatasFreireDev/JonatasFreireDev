@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { ParagraphTitle, Paragraph, Columns, Container, Paper } from "../atoms";
 
 import foto from "../../assets/jonatas.jpeg";

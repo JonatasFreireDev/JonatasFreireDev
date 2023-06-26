@@ -9,7 +9,10 @@ export function Welcome() {
       />
       <section className="absolute min-w-full min-h-screen flex flex-col items-center justify-center gap-7">
         <CircularPhoto />
-        <ParagraphTitle content={"Bem Vindo"} />
+        <ParagraphTitle
+          efect="animate-appearFromBottom"
+          content={"Bem Vindo"}
+        />
       </section>
     </header>
   );

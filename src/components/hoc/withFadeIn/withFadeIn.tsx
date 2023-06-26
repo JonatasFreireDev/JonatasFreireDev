@@ -12,7 +12,7 @@ interface withFadeInProps {
     | "animate-appearFromNothing";
 }
 
-export const withFadeIn = <T, _>(Component: IComponent<T>) => {
+export const withFadeIn = <T,>(Component: IComponent<T>) => {
   return (props: T & withFadeInProps) => {
     const efect = props.efect ?? "animate-appearFromNothing";
     const alreadyOn = useRef(false);

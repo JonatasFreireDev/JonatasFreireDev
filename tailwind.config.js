@@ -24,7 +24,7 @@ module.exports = {
         header:
           "linear-gradient(to bottom, rgba(1,1,1, 0.3), rgba(29,31,32, 1)), url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
         headerPhoto:
-          "url('https://github.com/JonatasFreireDev/JonatasFreireDev/blob/main/src/assets/jonatas-header.jpeg')",
+          "url('https://github.com/JonatasFreireDev/JonatasFreireDev/blob/main/src/assets/jonatas-header.jpeg?raw=true')",
       },
       animation: {
         appearFromRight: "appearFromRight 3s forwards",

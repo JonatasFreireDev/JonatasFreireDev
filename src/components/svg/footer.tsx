@@ -15,8 +15,8 @@ export const Footer = () => {
     >
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color={color.grey} offset="30%"></stop>
-          <stop stop-color={color.purple} offset="100%"></stop>
+          <stop stopColor={color.grey} offset="30%"></stop>
+          <stop stopColor={color.purple} offset="100%"></stop>
         </linearGradient>
       </defs>
       <path
@@ -26,8 +26,8 @@ export const Footer = () => {
       ></path>
       <defs>
         <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color={color.grey} offset="20%"></stop>
-          <stop stop-color={color.green} offset="100%"></stop>
+          <stop stopColor={color.grey} offset="20%"></stop>
+          <stop stopColor={color.green} offset="100%"></stop>
         </linearGradient>
       </defs>
       <path
@@ -37,8 +37,8 @@ export const Footer = () => {
       ></path>
       <defs>
         <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color={color.grey} offset="50%"></stop>
-          <stop stop-color={color.purple} offset="60%"></stop>
+          <stop stopColor={color.grey} offset="50%"></stop>
+          <stop stopColor={color.purple} offset="60%"></stop>
         </linearGradient>
       </defs>
       <path

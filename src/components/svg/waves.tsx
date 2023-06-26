@@ -8,8 +8,8 @@ export const Waves = () => (
   >
     <defs>
       <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-        <stop stop-color="#1D1F20" offset="5%"></stop>
-        <stop stop-color="#27292B" offset="90%"></stop>
+        <stop stopColor="#1D1F20" offset="5%"></stop>
+        <stop stopColor="#27292B" offset="90%"></stop>
       </linearGradient>
     </defs>
     <path
