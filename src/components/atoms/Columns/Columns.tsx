@@ -3,20 +3,20 @@ import { Container } from "../Container/Container";
 
 import { IColumnsProps } from "./Columns.types";
 
-export const Columns = memo<IColumnsProps>(({ quantity = 2, children }) => {
+export const Columns = memo<IColumnsProps>(({ className, children }) => {
   const countChildren = useMemo(() => Children.count(children), [children]);
 
   return (
-    <Container size="full">
+    <Container>
       <section
-        className={`min-h-screen min-w-min 
-                    justify-center justify-items-center items-center grid 
-                    gap-6  my-20
-                    grid-cols-1
-                    sm:grid-cols-2
-                    md:grid-cols-${quantity} md:gap-0 md:my-0
-                    xl:grid-cols-${quantity} md:gap-6 md:my-20
-                  `}
+        className={`grid grid-rows-1 justify-center justify-items-center
+                    items-center
+                    grid-cols-1 gap-10
+                    sm:grid-cols-1 sm:gap-5
+                    md:grid-cols-${countChildren} md:gap-10
+                    xl:grid-cols-${countChildren} xl:gap-20 
+                    ${className ?? ""}
+        `}
       >
         {Children.map(children, (child: ReactNode) => child)}
       </section>

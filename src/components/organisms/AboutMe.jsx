@@ -1,10 +1,20 @@
+import Image from "next/image";
 import { ParagraphTitle, Paragraph, Columns, Container, Paper } from "../atoms";
+
+import foto from "../../assets/jonatas.jpeg";
 
 export function AboutMe() {
   return (
-    <Container className="bg-secondary-400">
-      <Columns>
-        <div className="">sei la</div>
+    <Container size="full">
+      <Columns className="min-h-screen">
+        <div
+          className="max-h-[100%] 
+                      sm:max-w-[100%] 
+                      md:max-w-[90%] 
+                      lg:max-w-[75%]"
+        >
+          <Image alt="Jonatas" src={foto} className="rounded-2xl" />
+        </div>
         <div className="flex flex-col text-justify">
           <ParagraphTitle content={"Sobre Mim"} />
           <Paragraph
@@ -33,11 +43,6 @@ export function AboutMe() {
           algo incrível!"
           />
         </div>
-
-        <Paper rounded="md">
-          <div className="min-w-full">salve meus amiguinhos do mal</div>
-        </Paper>
-        <Paper rounded="lg">salve meus amiguinhos do mal</Paper>
       </Columns>
     </Container>
   );

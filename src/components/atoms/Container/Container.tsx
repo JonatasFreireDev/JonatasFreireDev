@@ -15,9 +15,8 @@ export const Container = memo<IContainerProps>(
 
     return (
       <div
-        className={`flex flex-col items-center bg-tertiary-900 ${
-          sizeStyle[size]
-        } ${className && className}`}
+        className={`flex flex-col items-center bg-tertiary-900 
+                    ${sizeStyle[size]} ${className ?? ""}`}
       >
         {children}
       </div>

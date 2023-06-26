@@ -4,20 +4,12 @@ export function Welcome() {
   return (
     <header className="flex min-w-full min-h-screen">
       <section
-        className="min-w-full min-h-screen 
-                    opacity-40 
-                    bg-header grayscale-[85%] 
-                    bg-cover bg-no-repeat bg-center"
+        className="min-w-full min-h-screen opacity-40 
+                  bg-header grayscale-[85%] bg-cover bg-no-repeat bg-center"
       />
-      <section
-        className="absolute min-w-full min-h-screen 
-                    flex flex-col items-center justify-between"
-      >
-        <div />
+      <section className="absolute min-w-full min-h-screen flex flex-col items-center justify-center gap-7">
         <CircularPhoto />
-        <div className="mb-16">
-          <ParagraphTitle content={"Bem Vindo"} />
-        </div>
+        <ParagraphTitle content={"Bem Vindo"} />
       </section>
     </header>
   );

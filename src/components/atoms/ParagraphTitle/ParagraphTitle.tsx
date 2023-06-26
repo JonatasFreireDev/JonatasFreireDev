@@ -6,7 +6,7 @@ export const ParagraphTitle = ({
   ...rest
 }: IParagraphTitleProps) => {
   return (
-    <span className={`font-bold text-2xl ${className && className}`} {...rest}>
+    <span className={`font-bold text-2xl ${className ?? ""}`} {...rest}>
       {content}
     </span>
   );
