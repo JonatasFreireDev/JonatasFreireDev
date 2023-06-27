@@ -17,8 +17,18 @@ export const IconLink = memo<IIconLinkProps>(
       },
     });
 
+    if (!content) {
+      return (
+        <S.Container>
+          <Link className={"order-2"} href={href} target="_blank">
+            <Icon side={side} size={30} />
+          </Link>
+        </S.Container>
+      );
+    }
+
     return (
-      <S.Container>
+      <S.Container hasContent>
         <Icon side={side} size={22} />
         <Link className={"order-2"} href={href} target="_blank">
           {content}

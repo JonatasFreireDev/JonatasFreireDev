@@ -1,6 +1,12 @@
+import { withFadeIn } from "@/components/hoc";
 import { w } from "windstitch";
 
 export const Container = w.header(`flex min-w-full min-h-screen`);
+const ContactContainerBase = w.section(
+  `flex gap-4 transition-all hover:text-secondary-400`
+);
+
+export const ContactContainer = withFadeIn(ContactContainerBase);
 
 export const Image = w.section(
   `
