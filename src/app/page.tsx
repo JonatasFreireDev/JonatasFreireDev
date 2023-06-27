@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import { Container } from "@/components/atoms";
-import { Welcome, AboutMe, Contact } from "@/components/organisms";
+import { Welcome, AboutMe } from "@/components/organisms";
 
 import { Footer } from "@/components/svg/footer";
 import { Waves } from "@/components/svg/waves";
@@ -21,8 +21,6 @@ export default function Home() {
 
       {/* Projects */}
 
-      {/* Contact */}
-      <Contact />
       <Footer />
     </Container>
   );
