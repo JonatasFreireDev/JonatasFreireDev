@@ -9,17 +9,11 @@ import * as S from "./AboutMe.styles";
 export function AboutMe() {
   return (
     <Container size="md">
-      <div
-        className="min-h-screen grid justify-center justify-items-center
-                    items-center grid-cols-1 gap-10
-                    sm:gap-5
-                    md:grid-cols-2 md:gap-10
-                    xl:gap-20"
-      >
-        <div className="max-h-full sm:max-w-xs md:max-w-sm  lg:max-w-md">
+      <S.Columns>
+        <S.ImageContainer>
           <Image alt="Jonatas" src={foto} className="rounded-2xl" />
-        </div>
-        <div className="flex flex-col text-justify">
+        </S.ImageContainer>
+        <S.DescriptionContainer>
           <ParagraphTitle content={"Sobre Mim"} />
           <Paragraph
             text="Olá, meu nome é Jonatas Freire e sou um desenvolvedor React apaixonado
@@ -46,8 +40,8 @@ export function AboutMe() {
           discutir seus projetos e ver como podemos trabalhar juntos para criar
           algo incrível!"
           />
-        </div>
-      </div>
+        </S.DescriptionContainer>
+      </S.Columns>
     </Container>
   );
 }
