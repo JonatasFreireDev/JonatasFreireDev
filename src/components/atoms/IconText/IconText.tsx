@@ -1,12 +1,26 @@
 import { memo } from "react";
+import { w } from "windstitch";
+
+import * as S from "./IconText.styles";
 
 import { IIconTextProps } from "./IconText.types";
 
 export const IconText = memo<IIconTextProps>(
-  ({ icon: Icon, side = "left", content }) => (
-    <div className="flex flex-row gap-2">
-      <Icon className={`order-${side === "left" ? 1 : 3}`} size={22} />
-      <span className={"order-2"}>{content}</span>
-    </div>
-  )
+  ({ icon: IconF, side = "left", content }) => {
+    const Icon = w(IconF, {
+      variants: {
+        side: {
+          left: "order-1",
+          right: "order-3",
+        },
+      },
+    });
+
+    return (
+      <S.Container>
+        <Icon side={side} size={22} />
+        <S.Text>{content}</S.Text>
+      </S.Container>
+    );
+  }
 );

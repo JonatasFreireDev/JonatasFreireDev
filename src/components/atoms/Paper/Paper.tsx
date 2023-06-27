@@ -1,29 +1,13 @@
-import { memo, useMemo } from "react";
+import { memo } from "react";
 
 import { IPaperProps } from "./Paper.types";
 
-export const Paper = memo<IPaperProps>(
-  ({ rounded = "md", className, children }) => {
-    const sizeStyle = useMemo(
-      () => ({
-        ["sm"]: "rounded-xl",
-        ["md"]: "rounded-2xl",
-        ["lg"]: "rounded-3xl",
-      }),
-      []
-    );
+import * as S from "./Paper.styles";
 
-    return (
-      <div
-        className={`${
-          sizeStyle[rounded]
-        } p-6 bg-tertiary-800  border-tertiary-700
-                    transition-all hover:-translate-y-1
-                    transition-color hover:border-secondary-400 hover:border-2
-                    ${className ?? ""}`}
-      >
-        {children}
-      </div>
-    );
-  }
+export const Paper = memo<IPaperProps>(
+  ({ rounded = "md", className, children }) => (
+    <S.Container rounded={rounded} className={`${className ?? ""}`}>
+      {children}
+    </S.Container>
+  )
 );

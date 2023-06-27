@@ -1,5 +1,5 @@
 import { Linkedin, Mail, GitHub } from "react-feather";
-import { Container, IconLink } from "../atoms";
+import { Container, IconLink } from "@/components/atoms";
 
 export const Contact = () => {
   return (

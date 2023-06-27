@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
-import { Container } from "@/components/atoms/Container/Container";
-import { Welcome } from "@/components/organisms/Welcome";
-import { AboutMe } from "@/components/organisms/AboutMe";
-import { Contact } from "@/components/organisms/Contact";
+import { Container } from "@/components/atoms";
+import { Welcome, AboutMe, Contact } from "@/components/organisms";
 
 import { Footer } from "@/components/svg/footer";
 import { Waves } from "@/components/svg/waves";

@@ -1,19 +1,22 @@
 import Image from "next/image";
 
-import { ParagraphTitle, Paragraph, Columns, Container, Paper } from "../atoms";
+import { ParagraphTitle, Paragraph, Container } from "@/components/atoms";
 
-import foto from "../../assets/jonatas.jpeg";
+import foto from "../../../assets/jonatas.jpeg";
+
+import * as S from "./AboutMe.styles";
 
 export function AboutMe() {
   return (
-    <Container size="full">
-      <Columns className="min-h-screen">
-        <div
-          className="max-h-[100%] 
-                      sm:max-w-[100%] 
-                      md:max-w-[90%] 
-                      lg:max-w-[75%]"
-        >
+    <Container size="md">
+      <div
+        className="min-h-screen grid justify-center justify-items-center
+                    items-center grid-cols-1 gap-10
+                    sm:gap-5
+                    md:grid-cols-2 md:gap-10
+                    xl:gap-20"
+      >
+        <div className="max-h-full sm:max-w-xs md:max-w-sm  lg:max-w-md">
           <Image alt="Jonatas" src={foto} className="rounded-2xl" />
         </div>
         <div className="flex flex-col text-justify">
@@ -44,7 +47,7 @@ export function AboutMe() {
           algo incrível!"
           />
         </div>
-      </Columns>
+      </div>
     </Container>
   );
 }
