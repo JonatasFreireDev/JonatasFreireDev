@@ -1,6 +1,8 @@
 "use client";
 import { CircularPhoto, IconLink, ParagraphTitle } from "@/components/atoms";
-import { GitHub, Linkedin, Mail } from "react-feather";
+
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 import * as S from "./Welcome.styles";
 
@@ -13,12 +15,12 @@ export function Welcome() {
         <CircularPhoto />
         <S.ContactContainer efect="animate-appearFromBottom">
           <IconLink
-            icon={Linkedin}
+            icon={BsLinkedin}
             href={"https://www.linkedin.com/in/jonatas-freire-557088139/"}
           />
-          <IconLink icon={Mail} href={"mailto:jonatasf1997@hotmail.com"} />
+          <IconLink icon={FiMail} href={"mailto:jonatasf1997@hotmail.com"} />
           <IconLink
-            icon={GitHub}
+            icon={BsGithub}
             href={"https://github.com/JonatasFreireDev"}
           />
         </S.ContactContainer>

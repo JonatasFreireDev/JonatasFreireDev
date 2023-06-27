@@ -1,8 +1,9 @@
 import { IComponentBaseProps } from "@/components/ComponentBase.types";
-import { Icon } from "react-feather";
+
+import { IconType } from "react-icons";
 
 export interface IIconTextProps extends IComponentBaseProps {
-  icon: Icon;
+  icon: IconType;
   content: String;
   side?: "left" | "right";
 }

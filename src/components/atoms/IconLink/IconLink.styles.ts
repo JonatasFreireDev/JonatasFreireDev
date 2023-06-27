@@ -7,10 +7,10 @@ export const Container = w.div(
   `,
   {
     variants: {
-      hasContent: (yes: Boolean) => (yes ? "gap-2" : ""),
+      hascontent: (yes: Boolean) => (yes ? "gap-2" : ""),
     },
     defaultVariants: {
-      hasContent: false,
+      hascontent: false,
     },
   }
 );
