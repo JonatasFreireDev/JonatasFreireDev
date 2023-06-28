@@ -7,6 +7,7 @@ export const Container = w.div(`flex flex-col items-center bg-tertiary-900`, {
       md: "w-3/4 max-w-6xl",
       full: "min-w-full",
     },
+    title: (yes: boolean) => (yes ? "min-h-screen justify-center" : ""),
   },
 });
 
