@@ -8,13 +8,10 @@ import * as S from "./AboutMe.styles";
 
 export function AboutMe() {
   return (
-    <Container size="md">
+    <Container size="md" title={"Sobre Mim"} className="mt-52">
       <S.Columns>
-        <S.ImageContainer>
-          <Image alt="Jonatas" src={foto} className="rounded-2xl" />
-        </S.ImageContainer>
+        <Image alt="Jonatas" src={foto} className="rounded-2xl md:w-3/4" />
         <S.DescriptionContainer>
-          <ParagraphTitle content={"Sobre Mim"} />
           <Paragraph
             text="Olá, meu nome é Jonatas Freire e sou um desenvolvedor React apaixonado
           por construir interfaces de usuário atraentes e funcionais para
