@@ -1,25 +1,63 @@
-import React from "react";
+"use client";
+import React, { useCallback, useMemo, useState } from "react";
+
+import { Container } from "@/components/atoms";
+import { techs } from "./Techs.const";
 
 import * as S from "./Techs.styles";
-
-import { Paper } from "@/components/atoms";
-import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { Card } from "@/components/molecules/Card/Card";
+import { CardTech } from "@/components/molecules/CardTech/CardTech";
 
 export const Techs = () => {
+  const [techActive, setTechActive] = useState(undefined);
+  const handleTechActive = useCallback((name) => setTechActive(name), []);
+
+  const activeTech = useMemo(
+    () =>
+      [...techs.backend, ...techs.frontend, ...techs.others].find(
+        (tech) => tech.name == techActive
+      ),
+    [techActive]
+  );
+
   return (
-    <S.Container className="flex flex-row gap-5">
-      <Paper border="md" className="hover:text-primary-400 p-3">
-        <FaReact size={40} />
-      </Paper>
-      <Paper border="md" className="hover:text-primary-400 p-3">
-        <FaCss3Alt size={40} />
-      </Paper>
-      <Paper border="md" className="hover:text-primary-400 p-3">
-        <FaHtml5 size={40} />
-      </Paper>
-      <Paper border="md" className="hover:text-primary-400 p-3">
-        <FaNodeJs size={40} />
-      </Paper>
-    </S.Container>
+    <Container size="md" title={"Tecnologias"}>
+      <S.TechsContent>
+        <Card title={"FrontEnd"}>
+          {techs.frontend.map(({ Icon, name }) => (
+            <CardTech
+              key={name}
+              Icon={Icon}
+              handleActive={() => handleTechActive(name)}
+            />
+          ))}
+        </Card>
+
+        <Card title={"BackEnd"}>
+          {techs.backend.map(({ Icon, name }) => (
+            <CardTech
+              key={name}
+              Icon={Icon}
+              handleActive={() => handleTechActive(name)}
+            />
+          ))}
+        </Card>
+
+        <Card title={"Outros"}>
+          {techs.others.map(({ Icon, name }) => (
+            <CardTech
+              key={name}
+              Icon={Icon}
+              handleActive={() => handleTechActive(name)}
+            />
+          ))}
+        </Card>
+      </S.TechsContent>
+
+      <div>
+        <div>{activeTech?.description}</div>
+        <div>{activeTech?.Icon()}</div>
+      </div>
+    </Container>
   );
 };
