@@ -9,3 +9,5 @@ export const Container = w.div(`flex flex-col items-center bg-tertiary-900`, {
     },
   },
 });
+
+export const Title = w.h1("font-bold text-4xl self-end my-10");
