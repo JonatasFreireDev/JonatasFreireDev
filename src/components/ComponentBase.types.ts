@@ -8,4 +8,9 @@ export type BaseComponentWithoutChildren = Omit<
   "children"
 >;
 
+export type BaseComponentWithoutClassName = Omit<
+  IComponentBaseProps,
+  "className"
+>;
+
 export type ISizes = "sm" | "md" | "lg" | "full";
