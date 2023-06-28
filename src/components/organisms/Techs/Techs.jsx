@@ -1,7 +1,7 @@
 "use client";
 import React, { useCallback, useMemo, useState } from "react";
 
-import { Container } from "@/components/atoms";
+import { Container, Paragraph, ParagraphTitle } from "@/components/atoms";
 import { techs } from "./Techs.const";
 
 import * as S from "./Techs.styles";
@@ -54,10 +54,15 @@ export const Techs = () => {
         </Card>
       </S.TechsContent>
 
-      <div>
-        <div>{activeTech?.description}</div>
-        <div>{activeTech?.Icon()}</div>
-      </div>
+      {activeTech && (
+        <div className="flex mt-10 gap-5 w-4/5 ">
+          <CardTech Icon={activeTech?.Icon} />
+          <div>
+            <ParagraphTitle content={activeTech.name} />
+            <Paragraph text={activeTech.description} />
+          </div>
+        </div>
+      )}
     </Container>
   );
 };

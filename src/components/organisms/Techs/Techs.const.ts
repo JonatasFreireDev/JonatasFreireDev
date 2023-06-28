@@ -121,7 +121,8 @@ export const techs = {
     {
       name: "Git",
       Icon: SiGit,
-      description: "Git",
+      description:
+        "testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante testo gigante ",
     },
     {
       name: "Unreal Engine",
