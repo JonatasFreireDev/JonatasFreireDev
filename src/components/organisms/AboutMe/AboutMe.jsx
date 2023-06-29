@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Paragraph, Container } from "@/components/atoms";
 
-import foto from "../../../assets/jonatas.jpeg";
+import foto from "../../../assets/jonatas.jpg";
 
 import * as S from "./AboutMe.styles";
 

@@ -97,11 +97,6 @@ export const techs = {
       description: "Go",
     },
     {
-      name: ".NET",
-      Icon: SiDotnet,
-      description: ".NET",
-    },
-    {
       name: "PostgresSql",
       Icon: SiPostgresql,
       description: "PostgresSql",
