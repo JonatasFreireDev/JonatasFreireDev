@@ -13,4 +13,4 @@ export type BaseComponentWithoutClassName = Omit<
   "className"
 >;
 
-export type ISizes = "sm" | "md" | "lg" | "full";
+export type ISizes = "sm" | "md" | "lg";

@@ -10,10 +10,6 @@ const meta: Meta<typeof CircularPhoto> = {
 export default meta;
 type Story = StoryObj<typeof CircularPhoto>;
 
-export const Teste: Story = {
-  render: () => (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <CircularPhoto />
-    </div>
-  ),
+export const Default: Story = {
+  render: () => <CircularPhoto />,
 };

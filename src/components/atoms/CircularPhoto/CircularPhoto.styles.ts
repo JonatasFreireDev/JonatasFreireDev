@@ -12,6 +12,6 @@ export const Container = w.div(
 export const Circle = w.div(
   `
   flex w-52 h-52 items-center justify-center rounded-full 
-  bg-tertiary-700 bg-headerPhoto bg-cover
+  bg-tertiary-700
 `
 );
