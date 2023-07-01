@@ -16,18 +16,18 @@ type Story = StoryObj<typeof Title>;
 
 export const Align: Story = {
   args: {
-    textAlign: "center",
+    algin: "center",
   },
 };
 
 export const AlignLeft: Story = {
   args: {
-    textAlign: "left",
+    algin: "left",
   },
 };
 
 export const TextSize: Story = {
   args: {
-    textSize: "lg",
+    size: "lg",
   },
 };

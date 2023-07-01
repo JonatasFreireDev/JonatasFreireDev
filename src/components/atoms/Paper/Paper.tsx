@@ -4,10 +4,6 @@ import { IPaperProps } from "./Paper.types";
 
 import * as S from "./Paper.styles";
 
-export const Paper = memo<IPaperProps>(
-  ({ rounded = "md", border = "none", children, ...rest }) => (
-    <S.Container rounded={rounded} border={border} {...rest}>
-      {children}
-    </S.Container>
-  )
-);
+export const Paper = memo<IPaperProps>(({ children, ...rest }) => (
+  <S.Container {...rest}>{children}</S.Container>
+));

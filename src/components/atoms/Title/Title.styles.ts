@@ -6,27 +6,27 @@ export const Container = w.div(
 `,
   {
     variants: {
-      textAlign: {
+      algin: {
         left: "justify-start",
         center: "justify-center",
         right: "justify-end",
       },
     },
     defaultVariants: {
-      textAlign: "right",
+      algin: "right",
     },
   }
 );
 
 export const Title = w.h2(`font-bold`, {
   variants: {
-    textSize: {
+    size: {
       sm: "text-xl",
       md: "text-2xl",
       lg: "text-3xl",
     },
   },
   defaultVariants: {
-    textSize: "md",
+    size: "md",
   },
 });

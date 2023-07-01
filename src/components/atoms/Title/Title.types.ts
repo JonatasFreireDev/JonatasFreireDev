@@ -5,6 +5,6 @@ import {
 
 export interface ITitleProps extends BaseComponentWithoutChildren {
   text: string;
-  textAlign?: "left" | "center" | "right";
-  textSize?: ISizes;
+  algin?: "left" | "center" | "right";
+  size?: ISizes;
 }

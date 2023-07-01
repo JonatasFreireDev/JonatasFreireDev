@@ -8,7 +8,7 @@ import * as S from "./Contact.styles";
 
 export const Contact = memo(() => (
   <S.Container>
-    <Title text="Bem Vindo" efect="animate-appearFromTop" />
+    <Title text="Bem Vindo" algin="center" efect="animate-appearFromTop" />
 
     <CircularPhoto />
 

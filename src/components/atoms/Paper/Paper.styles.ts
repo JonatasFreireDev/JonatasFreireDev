@@ -22,6 +22,7 @@ export const Container = w.div(
     },
     defaultVariants: {
       border: "none",
+      rounded: "md",
     },
   }
 );

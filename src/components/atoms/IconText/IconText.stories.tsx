@@ -17,7 +17,7 @@ type Story = StoryObj<typeof IconText>;
 
 export const WithText: Story = {
   args: {
-    content: "Link To",
+    content: "Icon Text",
   },
 };
 

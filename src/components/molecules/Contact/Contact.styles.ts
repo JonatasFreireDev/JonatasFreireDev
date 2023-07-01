@@ -6,7 +6,7 @@ export const Container = w.div(
 );
 
 const ContactContainerBase = w.section(
-  `flex gap-4 transition-all hover:text-secondary-400`
+  `flex justify-center items-center gap-4 transition-all hover:text-secondary-400`
 );
 
 export const ContactContainer = withFadeIn(ContactContainerBase);

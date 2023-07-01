@@ -5,7 +5,7 @@ import { withThemeByClassName } from "@storybook/addon-styling";
 import { withPerformance } from "storybook-addon-performance";
 
 /* TODO: update import to your tailwind styles file */
-import "../src/styles/tailwind.css";
+import "../src/app/globals.css";
 
 export const decorator = [
   withThemeByClassName({
