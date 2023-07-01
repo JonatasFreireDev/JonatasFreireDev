@@ -4,7 +4,7 @@ import { Container } from "./Container";
 
 const Content = () => {
   return (
-    <div style={{ background: "grey", color: "white", padding: "5px" }}>
+    <div style={{ background: "darkgrey", color: "white", padding: "5px" }}>
       Content
     </div>
   );
@@ -13,8 +13,9 @@ const Content = () => {
 const meta: Meta<typeof Container> = {
   title: "Atoms/Container",
   component: Container,
+  tags: ["autodocs"],
   args: {
-    title: "sae",
+    title: "Header",
     size: "full",
     children: <Content />,
   },
@@ -23,15 +24,7 @@ const meta: Meta<typeof Container> = {
 export default meta;
 type Story = StoryObj<typeof Container>;
 
-export const FullSize: Story = {
-  render: () => (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <Container size="md" title={"Aoba"}>
-        aoba
-      </Container>
-    </div>
-  ),
-};
+export const FullSize: Story = {};
 
 export const MediumSize: Story = {
   args: {
@@ -42,5 +35,11 @@ export const MediumSize: Story = {
 export const SmallSize: Story = {
   args: {
     size: "sm",
+  },
+};
+
+export const WithoutTitle: Story = {
+  args: {
+    title: undefined,
   },
 };

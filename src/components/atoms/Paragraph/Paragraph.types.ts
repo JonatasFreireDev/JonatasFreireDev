@@ -1,7 +1,5 @@
-import { IComponentBaseProps } from "@/components/ComponentBase.types";
+import { BaseComponentWithoutChildren } from "@/components/ComponentBase.types";
 
-type TParagraphProps = Omit<IComponentBaseProps, "children">;
-
-export interface IParagraphProps extends TParagraphProps {
+export interface IParagraphProps extends BaseComponentWithoutChildren {
   text: string;
 }

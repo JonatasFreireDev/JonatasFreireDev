@@ -5,7 +5,7 @@ import { Paper } from "./Paper";
 const Content = () => {
   return (
     <div style={{ background: "grey", color: "white", padding: "5px" }}>
-      Content
+      content
     </div>
   );
 };
@@ -13,6 +13,7 @@ const Content = () => {
 const meta: Meta<typeof Paper> = {
   title: "Atoms/Paper",
   component: Paper,
+  tags: ["autodocs"],
   args: {
     children: <Content />,
   },
@@ -21,10 +22,15 @@ const meta: Meta<typeof Paper> = {
 export default meta;
 type Story = StoryObj<typeof Paper>;
 
-export const FullSize: Story = {
-  render: () => (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <Paper>aoba</Paper>
-    </div>
-  ),
+export const WithBorder: Story = {
+  args: {
+    border: "md",
+  },
+};
+
+export const Rounded: Story = {
+  args: {
+    border: "none",
+    rounded: "md",
+  },
 };

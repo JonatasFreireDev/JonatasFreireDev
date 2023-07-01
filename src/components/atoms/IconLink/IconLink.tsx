@@ -7,7 +7,7 @@ import * as S from "./IconLink.styles";
 import { IIconLinkProps } from "./IconLink.types";
 
 export const IconLink = memo<IIconLinkProps>(
-  ({ icon: IconF, href, side = "left", content }) => {
+  ({ icon: IconF, href, side = "left", content, ...rest }) => {
     const Icon = w(IconF, {
       variants: {
         side: {
@@ -19,7 +19,7 @@ export const IconLink = memo<IIconLinkProps>(
 
     if (!content) {
       return (
-        <S.Container>
+        <S.Container {...rest}>
           <Link className={"order-2"} href={href} target="_blank">
             <Icon side={side} size={30} />
           </Link>
@@ -28,7 +28,7 @@ export const IconLink = memo<IIconLinkProps>(
     }
 
     return (
-      <S.Container hascontent>
+      <S.Container hascontent {...rest}>
         <Icon side={side} size={22} />
         <Link className={"order-2"} href={href} target="_blank">
           {content}

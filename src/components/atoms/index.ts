@@ -5,3 +5,4 @@ export * from "./IconText";
 export * from "./Paper";
 export * from "./Paragraph";
 export * from "./ParagraphTitle";
+export * from "./Title";

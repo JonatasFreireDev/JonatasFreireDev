@@ -37,6 +37,7 @@
     "eslint-config-next": "13.3.2",
     "eslint-plugin-storybook": "^0.6.12",
     "storybook": "^7.0.24",
+    "storybook-addon-performance": "^0.17.1",
     "storybook-dark-mode": "^3.0.0"
   }
 }

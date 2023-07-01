@@ -22,7 +22,10 @@ export const withFadeIn = <T,>(Component: IComponent<T>) => {
     if (isOnScreen) alreadyOn.current = true;
 
     return (
-      <div ref={ref} className={`opacity-0 ${alreadyOn.current ? efect : ``}`}>
+      <div
+        ref={ref}
+        className={`opacity-0 w-full ${alreadyOn.current ? efect : ``}`}
+      >
         <Component {...props} />
       </div>
     );

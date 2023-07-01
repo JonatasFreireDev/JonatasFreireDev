@@ -1,15 +1,13 @@
 import { memo } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-
-import { CircularPhoto, IconLink } from "@/components/atoms";
-
 import { FiMail } from "react-icons/fi";
 
+import { CircularPhoto, IconLink, Title } from "@/components/atoms";
+
 import * as S from "./Contact.styles";
-import { Title } from "@/components/atoms/Title";
 
 export const Contact = memo(() => (
-  <S.Container className="">
+  <S.Container>
     <Title text="Bem Vindo" efect="animate-appearFromTop" />
 
     <CircularPhoto />
