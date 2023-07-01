@@ -7,7 +7,7 @@ export const Container = w.div(
       size: {
         sm: "w-2/4 max-w-xl",
         md: "w-3/4 max-w-6xl",
-        full: "min-w-full p-5",
+        full: "min-w-full",
       },
     },
   }

@@ -6,7 +6,7 @@ import { Waves } from "@/components/svg/waves";
 
 export default function Home() {
   return (
-    <Container size="full" className="p-0">
+    <Container size="full">
       {/* Header */}
       <Welcome />
 
