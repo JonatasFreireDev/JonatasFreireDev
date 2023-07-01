@@ -1,5 +1,3 @@
-import { Paper } from "@/components/atoms";
-
 import { ICardTechProps } from "./CardTech.types";
 
 export const CardTech = ({ Icon, handleActive }: ICardTechProps) => (

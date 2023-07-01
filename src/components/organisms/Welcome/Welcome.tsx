@@ -1,5 +1,4 @@
-"use client";
-import { Contact } from "@/components/molecules";
+import { Contact } from "@/components/molecules/Contact";
 
 import * as S from "./Welcome.styles";
 

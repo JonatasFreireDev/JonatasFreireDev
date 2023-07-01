@@ -1,3 +1,4 @@
+"use client";
 import { w } from "windstitch";
 import { withFadeIn } from "@/components/hoc";
 

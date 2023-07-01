@@ -1,12 +1,15 @@
 "use client";
 import React, { useCallback, useMemo, useState } from "react";
 
-import { Container, Paragraph, ParagraphTitle } from "@/components/atoms";
+import { Container } from "@/components/atoms/Container";
+import { Card } from "@/components/molecules/Card";
+import { CardTech } from "@/components/molecules/CardTech";
+import { ParagraphTitle } from "@/components/atoms/ParagraphTitle";
+import { Paragraph } from "@/components/atoms/Paragraph";
+
 import { techs } from "./Techs.const";
 
 import * as S from "./Techs.styles";
-import { Card } from "@/components/molecules/Card/Card";
-import { CardTech } from "@/components/molecules/CardTech/CardTech";
 
 export const Techs = () => {
   const [techActive, setTechActive] = useState(undefined);

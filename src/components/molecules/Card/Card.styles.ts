@@ -1,6 +1,6 @@
 import { w } from "windstitch";
 
-import { Paper } from "@/components/atoms";
+import { Paper } from "@/components/atoms/Paper";
 
 export const Container = w(Paper, {
   defaultProps: { border: "sm", rounded: "sm" },

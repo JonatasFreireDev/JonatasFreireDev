@@ -1,3 +1,4 @@
+"use client";
 import { useOberser } from "@/hooks/useObserver";
 import { useRef } from "react";
 

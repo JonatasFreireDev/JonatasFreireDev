@@ -1,5 +1,9 @@
-import { Container } from "@/components/atoms";
-import { Welcome, AboutMe, Techs } from "@/components/organisms";
+import { Container } from "@/components/atoms/Container";
+
+import { ScrollButton } from "@/components/molecules/ScrollButton";
+import { AboutMe } from "@/components/organisms/AboutMe";
+import { Techs } from "@/components/organisms/Techs";
+import { Welcome } from "@/components/organisms/Welcome";
 
 import { Footer } from "@/components/svg/footer";
 import { Waves } from "@/components/svg/waves";
@@ -20,6 +24,7 @@ export default function Home() {
       {/* Projects */}
 
       <Footer />
+      <ScrollButton />
     </Container>
   );
 }

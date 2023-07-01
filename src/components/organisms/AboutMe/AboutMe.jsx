@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import { Paragraph, Container } from "@/components/atoms";
+import { Container } from "@/components/atoms/Container";
+import { Paragraph } from "@/components/atoms/Paragraph";
 
 import foto from "../../../assets/jonatas.jpg";
 

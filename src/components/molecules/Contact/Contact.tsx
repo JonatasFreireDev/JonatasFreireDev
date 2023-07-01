@@ -1,8 +1,11 @@
 import { memo } from "react";
+
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
-import { CircularPhoto, IconLink, Title } from "@/components/atoms";
+import { Title } from "@/components/atoms/Title";
+import { CircularPhoto } from "@/components/atoms/CircularPhoto";
+import { IconLink } from "@/components/atoms/IconLink";
 
 import * as S from "./Contact.styles";
 

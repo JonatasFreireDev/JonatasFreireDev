@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
+import { Container } from "@/components/atoms/Container";
 import { AboutMe } from "./AboutMe";
-import { Container } from "@/components/atoms";
 
 const meta: Meta<typeof AboutMe> = {
   title: "Organisms/AboutMe",
