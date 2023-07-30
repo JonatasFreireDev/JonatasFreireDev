@@ -1,11 +1,12 @@
-name: Storybook
+name: Storybook to GitHub Pages
+
 on:
   push:
     branches:
       - "main" # change to the branch you wish to deploy from
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -24,7 +25,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          branch: main
+          branch: sb-ghp
           folder: storybook-static
           lfs: true
-          token: ${{ secrets.ACCESS_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
