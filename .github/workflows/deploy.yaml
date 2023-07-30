@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          branch: main
+          branch: gh-pages
           folder: storybook-static
           lfs: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
