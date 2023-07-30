@@ -10,11 +10,14 @@ permissions:
   id-token: write
 
 jobs:
-   build-and-deploy:
+   build-and-deploy-storybook:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
+        with:
+          lfs: true
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Install and Build
         run: |
