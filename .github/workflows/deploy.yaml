@@ -1,7 +1,5 @@
 name: Storybook to GitHub Pages
 
-name: Storybook to GitHub Pages
-
 on:
   push:
     branches:
