@@ -1,1 +1,0 @@
-export { CircularPhoto } from "./CircularPhoto";

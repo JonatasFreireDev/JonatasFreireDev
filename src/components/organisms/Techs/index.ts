@@ -1,1 +1,0 @@
-export { Techs } from "./Techs";
