@@ -30,4 +30,3 @@ jobs:
           folder: storybook-static
           lfs: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
