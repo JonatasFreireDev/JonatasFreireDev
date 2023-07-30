@@ -37,7 +37,7 @@ export const Footer = () => {
       ></path>
       <defs>
         <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-          <stop stopColor={color.grey} offset="50%"></stop>
+          <stop stopColor={color.grey} offset="10%"></stop>
           <stop stopColor={color.purple} offset="60%"></stop>
         </linearGradient>
       </defs>

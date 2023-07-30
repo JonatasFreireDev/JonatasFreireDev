@@ -27,38 +27,44 @@ export const Techs = () => {
     <Container size="md" title={"Tecnologias"}>
       <S.TechsContent>
         <Card title={"FrontEnd"}>
-          {techs.frontend.map(({ Icon, name }) => (
-            <CardTech
-              key={name}
-              Icon={Icon}
-              handleActive={() => handleTechActive(name)}
-            />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {techs.frontend.map(({ Icon, name }) => (
+              <CardTech
+                key={name}
+                Icon={Icon}
+                handleActive={() => handleTechActive(name)}
+              />
+            ))}
+          </div>
         </Card>
 
         <Card title={"BackEnd"}>
-          {techs.backend.map(({ Icon, name }) => (
-            <CardTech
-              key={name}
-              Icon={Icon}
-              handleActive={() => handleTechActive(name)}
-            />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {techs.backend.map(({ Icon, name }) => (
+              <CardTech
+                key={name}
+                Icon={Icon}
+                handleActive={() => handleTechActive(name)}
+              />
+            ))}
+          </div>
         </Card>
 
         <Card title={"Outros"}>
-          {techs.others.map(({ Icon, name }) => (
-            <CardTech
-              key={name}
-              Icon={Icon}
-              handleActive={() => handleTechActive(name)}
-            />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {techs.others.map(({ Icon, name }) => (
+              <CardTech
+                key={name}
+                Icon={Icon}
+                handleActive={() => handleTechActive(name)}
+              />
+            ))}
+          </div>
         </Card>
       </S.TechsContent>
 
       {activeTech && (
-        <div className="flex mt-10 gap-5 w-4/5 ">
+        <div className="flex mt-10 gap-5 w-4/5 items-start">
           <CardTech Icon={activeTech?.Icon} />
           <div>
             <ParagraphTitle content={activeTech.name} />
